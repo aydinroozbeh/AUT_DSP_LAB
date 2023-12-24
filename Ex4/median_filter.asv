@@ -1,0 +1,10 @@
+function img_out = median_filter(img_in , w)
+
+if(mod(w,2))
+    error("WINDOWS SIZE IS NOT AN ODD NUMBER");
+end
+
+s=size(img_in);
+for i=2:1:s[1]
+    for j=2:1:s[2]
+        
